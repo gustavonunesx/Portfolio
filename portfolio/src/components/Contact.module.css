@@ -1,0 +1,182 @@
+.section {
+  position: relative;
+  z-index: 1;
+  background: #07070e;
+  padding: 120px 60px 100px;
+  overflow: hidden;
+  text-align: center;
+}
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(79,195,247,0.3), transparent);
+}
+
+/* Ambient glow */
+.glow {
+  position: absolute;
+  top: 40%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(79,195,247,0.04) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+/* Header */
+.header { margin-bottom: 64px; }
+.eyebrow {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  color: #4fc3f7;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.eyebrowSlash { color: rgba(79,195,247,0.4); }
+.title {
+  font-family: 'Arial Black', 'Arial', sans-serif;
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+.accent {
+  color: transparent;
+  -webkit-text-stroke: 2px #4fc3f7;
+}
+.sub {
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  color: rgba(255,255,255,0.35);
+  line-height: 1.75;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* Contact cards grid — 2x2 like image 1 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 480px);
+  gap: 14px;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s, border-color 0.3s, transform 0.25s;
+  border-radius: 2px;
+}
+.card:hover {
+  background: rgba(79,195,247,0.04);
+  border-color: rgba(79,195,247,0.2);
+  transform: translateY(-2px);
+}
+
+/* Accent line on left side */
+.cardBorder {
+  position: absolute;
+  left: 0; top: 10%; bottom: 10%;
+  width: 2px;
+  background: var(--ch-color, #4fc3f7);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.card:hover .cardBorder { opacity: 1; }
+
+.cardIcon {
+  width: 48px; height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cardContent {
+  flex: 1;
+  text-align: left;
+}
+.cardLabel {
+  display: block;
+  font-family: 'Arial Black', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -0.3px;
+  margin-bottom: 3px;
+}
+.cardValue {
+  display: block;
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.5px;
+}
+
+.cardArrow {
+  font-size: 16px;
+  color: rgba(255,255,255,0.15);
+  transition: color 0.25s, transform 0.25s;
+}
+.card:hover .cardArrow {
+  color: var(--ch-color, #4fc3f7);
+  transform: translateX(4px);
+}
+
+/* Bottom CTA */
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.ctaText {
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 1px;
+}
+.ctaBtn {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #05050a;
+  background: #4fc3f7;
+  padding: 16px 36px;
+  text-decoration: none;
+  font-weight: 700;
+  clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.ctaBtn:hover {
+  background: #81d4fa;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(79,195,247,0.25);
+}
+
+@media (max-width: 1060px) {
+  .grid { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
+}
+@media (max-width: 700px) {
+  .section { padding: 80px 20px; }
+  .grid { max-width: 100%; }
+}
