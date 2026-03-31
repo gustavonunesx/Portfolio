@@ -5,29 +5,29 @@ import { MessageCircle, Mail, Linkedin, Github } from 'lucide-react'
 const channels = [
   {
     label: 'WhatsApp',
-    value: '+55 (11) 99999-9999',
-    href: 'https://wa.me/5511999999999',
+    value: '+55 (16) 98109-4196',
+    href: 'https://wa.me/5516981094196',
     icon: MessageCircle,
     color: '#25d366',
   },
   {
     label: 'Email',
-    value: 'gustavo@email.com',
-    href: 'mailto:gustavo@email.com',
+    value: 'gu.nunesx@gmail.com',
+    href: 'gu.nunesx@gmail.com',
     icon: Mail,
     color: '#10b981',
   },
   {
     label: 'LinkedIn',
-    value: '/in/gustavonunes',
-    href: 'https://linkedin.com/in/gustavonunes',
+    value: '/in/gustavo-ferreira-nunes',
+    href: 'https://linkedin.com/in/gustavo-ferreira-nunes',
     icon: Linkedin,
     color: '#0a66c2',
   },
   {
     label: 'GitHub',
-    value: 'github.com/gustavonunes',
-    href: 'https://github.com/gustavonunes',
+    value: 'github.com/gustavonunesx',
+    href: 'https://github.com/gustavonunesx',
     icon: Github,
     color: '#ffffff',
   },
@@ -109,7 +109,7 @@ export default function Contact() {
             Prefere mandar uma mensagem direta?
           </p>
           <a
-            href="mailto:gustavo@email.com?subject=Quero um orçamento"
+            href="mailto:gu.nunesx@gmail.com?subject=Quero um orçamento"
             className="inline-flex items-center gap-2 px-8 py-4 text-sm font-semibold text-primary-foreground bg-primary rounded-lg hover:bg-primary/90 transition-all duration-200 hover:shadow-xl hover:shadow-primary/25"
           >
             Solicitar orçamento gratuito →
