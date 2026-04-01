@@ -9,9 +9,12 @@ export default function Footer() {
         {/* Left */}
         <div className="flex flex-col md:flex-row items-center gap-5">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-1 font-[family-name:var(--font-space-grotesk)] text-base font-bold tracking-tight text-foreground">
-            <span className="text-primary">G</span>
-            <span>Nunes</span>
+          <a href="#" className="group flex items-center font-[family-name:var(--font-space-grotesk)] text-base font-bold tracking-tight">
+            <span className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">&lt;</span>
+            <span className="text-primary mx-0.5 group-hover:scale-110 transition-transform duration-300 inline-block">G</span>
+            <span className="text-foreground group-hover:text-primary transition-colors duration-300">Nunes</span>
+            <span className="text-primary group-hover:text-foreground transition-colors duration-300">/</span>
+            <span className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">&gt;</span>
           </a>
           
           <span className="text-xs text-muted-foreground">
