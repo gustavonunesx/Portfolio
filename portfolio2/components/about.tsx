@@ -2,7 +2,7 @@
 
 const stats = [
   { num: '20+', label: 'Projetos entregues' },
-  { num: '3+', label: 'Anos de experiência' },
+  { num: '2+', label: 'Anos de experiência' },
   { num: '100%', label: 'Taxa de entrega' },
   { num: '24h', label: 'Tempo de resposta' },
 ]

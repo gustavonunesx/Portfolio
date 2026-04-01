@@ -63,7 +63,7 @@ export default function Services() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 text-xs text-primary uppercase tracking-widest mb-4">
-            <span className="text-primary/40">//</span> Nossos Serviços
+            <span className="text-primary/40">//</span> Meus Serviços
           </div>
           <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
             O que eu <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">faço.</span>

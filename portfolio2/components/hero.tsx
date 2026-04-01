@@ -60,22 +60,9 @@ export default function Hero() {
               <div className="absolute inset-0 border border-primary/20 rounded-2xl transform rotate-3" />
               <div className="absolute inset-0 border border-primary/10 rounded-2xl transform -rotate-2" />
               
-              {/* Photo placeholder */}
-              <div className="relative w-64 h-80 md:w-80 md:h-96 bg-gradient-to-br from-secondary to-background rounded-2xl overflow-hidden border border-primary/20 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-24 h-24 mx-auto mb-4 rounded-full border-2 border-dashed border-primary/30 flex items-center justify-center">
-                    <svg className="w-10 h-10 text-primary/40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                      <circle cx="12" cy="8" r="4" />
-                      <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
-                    </svg>
-                  </div>
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider">Sua foto aqui</p>
-                </div>
-                
-                {/* Decorative G */}
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <span className="text-[200px] font-bold text-primary/5 font-[family-name:var(--font-space-grotesk)]">G</span>
-                </div>
+              {/* Photo */}
+              <div className="relative w-full max-w-lg md:max-w-2xl h-[500px] md:h-[600px] bg-gradient-to-br from-secondary to-background rounded-2xl overflow-hidden border border-primary/20 flex items-center justify-center">
+                <img src="/public/photo-profile.png" alt="Gustavo Nunes" className="w-full h-full object-cover" />
               </div>
 
               {/* Glow effect */}

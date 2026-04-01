@@ -60,17 +60,7 @@ export default function Hero() {
           Substitua .photoPlaceholder por:
           <img src="/sua-foto.jpg" className={styles.photoImg} alt="Gustavo Nunes" />
         */}
-        <div className={styles.photoPlaceholder}>
-          <div className={styles.photoG}>G</div>
-          <div className={styles.photoCircle}>
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-              <circle cx="12" cy="8" r="4" />
-              <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
-            </svg>
-            <span>Sua foto aqui</span>
-          </div>
-          <div className={styles.photoBorder} />
-        </div>
+        <img src="/public/profile-profile.png" className={styles.photoImg} alt="Gustavo Nunes" />
         <div className={styles.photoFade} />
       </div>
 

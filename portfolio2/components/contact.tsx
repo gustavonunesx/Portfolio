@@ -22,14 +22,14 @@ const channels = [
     value: '/in/gustavo-ferreira-nunes',
     href: 'https://linkedin.com/in/gustavo-ferreira-nunes',
     icon: Linkedin,
-    color: '#0a66c2',
+    color: '#10b981',
   },
   {
     label: 'GitHub',
     value: 'github.com/gustavonunesx',
     href: 'https://github.com/gustavonunesx',
     icon: Github,
-    color: '#ffffff',
+    color: '#10b981',
   },
 ]
 

@@ -5,45 +5,26 @@ import { ExternalLink, Github } from 'lucide-react'
 
 const projects = [
   {
-    tag: 'SaaS',
-    name: 'Analytics Dashboard',
-    desc: 'Plataforma SaaS completa com dashboards em tempo real, relatórios exportáveis e autenticação multi-tenant. Mais de 500 usuários ativos.',
-    tags: ['React', 'Node.js', 'PostgreSQL'],
-    github: 'https://github.com/gustavonunes',
+    tag: 'Sistema Backend Completo',
+    name: 'CineVibe',
+    desc: 'Sistema completo de gerenciamento de cinema desenvolvido com Spring Boot, oferecendo funcionalidades de gestão de filmes, sessões, reservas de assentos e análise de dados (analytics).',
+    tags: ['Java', 'Spring Boot', 'React', 'MySQL 8.0' ],
+    github: 'https://github.com/gustavonunesx/Cinema-Project.git',
     demo: '#',
-    screenshot: null,
+    screenshot: '/cinevibe/cinevibe.png',
     color: 'from-emerald-500/20 to-teal-500/20',
   },
   {
     tag: 'E-commerce',
-    name: 'Loja Virtual Completa',
-    desc: 'E-commerce full-featured com carrinho, pagamentos via Stripe, painel admin e gestão de estoque. Mobile-first e pronto para vender.',
-    tags: ['Next.js', 'Stripe', 'MongoDB'],
-    github: 'https://github.com/gustavonunes',
-    demo: '#',
-    screenshot: null,
+    name: 'Sistema de Gestão para Pastelaria',
+    desc: 'Sistema completo full-stack para gerenciamento de uma pastelaria, com cardápio digital, pedidos pelo WhatsApp, painel administrativo e controle financeiro em tempo real.',
+    tags: ['Next.js', 'TypeScript', 'Supabase', 'Supabase Auth', 'Supabase Realtime'],
+    github: 'https://github.com/gustavonunesx/E-commerce_Full_Project.git',
+    demo: 'https://e-commerce-full-project-pmqj-dkcbdrumf-gustavonunesxs-projects.vercel.app/',
+    screenshot: '/pastelaria/image.png',
     color: 'from-primary/20 to-emerald-500/20',
   },
-  {
-    tag: 'Landing Page',
-    name: 'Landing Page Imobiliária',
-    desc: 'Página de captação de leads com formulário inteligente e integração WhatsApp. Alta taxa de conversão e design responsivo.',
-    tags: ['React', 'Tailwind', 'WhatsApp API'],
-    github: 'https://github.com/gustavonunes',
-    demo: '#',
-    screenshot: null,
-    color: 'from-teal-500/20 to-cyan-500/20',
-  },
-  {
-    tag: 'Sistema B2B',
-    name: 'Sistema de Gestão',
-    desc: 'Sistema interno para controle de clientes, estoque e financeiro. Substituiu planilhas por um painel completo e integrado.',
-    tags: ['React', 'Express', 'MySQL'],
-    github: 'https://github.com/gustavonunes',
-    demo: '#',
-    screenshot: null,
-    color: 'from-emerald-500/20 to-green-500/20',
-  },
+  
 ]
 
 export default function Projects() {
@@ -64,7 +45,7 @@ export default function Projects() {
             O que eu <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">construí.</span>
           </h2>
           <p className="text-muted-foreground max-w-md mx-auto">
-            Uma seleção de trabalhos reais — do simples ao mais complexo.
+            Uma seleção de trabalhos reais
           </p>
         </div>
 
@@ -129,7 +110,7 @@ export default function Projects() {
                     className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-primary-foreground bg-primary rounded-lg hover:bg-primary/90 transition-colors"
                   >
                     <ExternalLink className="w-4 h-4" />
-                    Live Demo
+                    Ver Projeto
                   </a>
                 </div>
               </div>
