@@ -1,13 +1,11 @@
 'use client'
 
 const clients = [
-  'Imobiliária SP',
-  'ClinicaMed',
-  'LojaModa',
-  'SkyTech',
-  'DeliveryApp',
-  'Construtech',
-  'AgênciaX',
+  'NOVOS PROJETOS EM ANDAMENTO...',
+  'NOVOS PROJETOS EM ANDAMENTO...',
+  'NOVOS PROJETOS EM ANDAMENTO...',
+  'NOVOS PROJETOS EM ANDAMENTO...',
+  'NOVOS PROJETOS EM ANDAMENTO...',
 ]
 
 export default function Clients() {
