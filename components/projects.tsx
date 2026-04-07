@@ -10,7 +10,7 @@ const projects = [
     desc: 'Sistema completo de gerenciamento de cinema desenvolvido com Spring Boot, oferecendo funcionalidades de gestão de filmes, sessões, reservas de assentos e análise de dados (analytics).',
     tags: ['Java', 'Spring Boot', 'React', 'MySQL 8.0' ],
     github: 'https://github.com/gustavonunesx/Cinema-Project.git',
-    demo: '#',
+    demo: 'https://cinema-project-five.vercel.app/',
     screenshot: '/cinevibe/cinevibe.png',
     color: 'from-emerald-500/20 to-teal-500/20',
   },
