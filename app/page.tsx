@@ -1,4 +1,5 @@
 import ParticlesBackground from '@/components/particles-background'
+import LoadingScreen from '@/components/loading-screen'
 import Navbar from '@/components/navbar'
 import Hero from '@/components/hero'
 import Services from '@/components/services'
@@ -11,6 +12,7 @@ import Footer from '@/components/footer'
 export default function Home() {
   return (
     <main className="relative min-h-screen bg-background overflow-hidden">
+      <LoadingScreen />
       {/* Animated Particles Background */}
       <ParticlesBackground />
       
